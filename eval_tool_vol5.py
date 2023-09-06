@@ -536,9 +536,8 @@ class _eval:
             
 if __name__ == "__main__":
     dataset = "africa_gimbal_15"
-    gt_dir = "/home/haktanito/PythonScripts/bag_handle/africa_gimbal/africa_gimbal_15/gt.csv"
-    #gt_dir = "/home/haktanito/PythonScripts/roketsanRosbagCreator/Lalahan_low_G/gt_lalahan.csv"
-    estimations = os.path.join("/home/haktanito/workspace/evaluationWorkspace/1Ey_23/",dataset)
+    gt_dir = "ExampleDataset/GroundTruths/gt_15.csv"
+    estimations = os.path.join("ExampleDataset/Runs",dataset)
 
     eval = _eval(gt_dir)
     eval.show = False
